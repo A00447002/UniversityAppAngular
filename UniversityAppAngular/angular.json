@@ -1,12 +1,9 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "035f7fb0-ac3e-47c3-b8bd-4e02956dcfaa"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "University-App": {
+    "UniversityApp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/University-App",
+            "outputPath": "dist/UniversityApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "University-App:build:production"
+              "browserTarget": "UniversityApp:build:production"
             },
             "development": {
-              "browserTarget": "University-App:build:development"
+              "browserTarget": "UniversityApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "University-App:build"
+            "browserTarget": "UniversityApp:build"
           }
         },
         "test": {
@@ -105,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "University-App"
+  "defaultProject": "UniversityApp"
 }
